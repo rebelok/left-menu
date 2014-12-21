@@ -1,58 +1,206 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>left menu</title>
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <title>left menu</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
 
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="../bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-  </head>
-  <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="../bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Sass</li>
-        <li>Modernizr</li>
-      </ul>
+
+<div class="b-wrapper">
+  <div class="b-header cf">
+    <div class="b-header__menu b-header__btn">
+      <svg viewBox="0 0 56 56">
+        <rect x="12" y="14.378" class="svg-part" width="32" height="6.333"></rect>
+        <rect x="12" y="35.289" class="svg-part" width="32" height="6.333"></rect>
+        <rect x="12" y="24.833" class="svg-part" width="32" height="6.333"></rect>
+      </svg>
     </div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+    <div class="b-header__user b-header__btn">
+      <a class="b-header-login__link" href="https://id.expressen.se/?return_url=http://www.expressen.se/"
+         style="display: block;">
+        <svg viewBox="0 0 50 50">
+          <g>
+            <circle class="svg-part" cx="25" cy="18.632" r="8.294"></circle>
+          </g>
+          <g>
+            <path class="svg-part" d="M36.405,27.529c-0.562-0.593-2.583-1.881-3.148-1.881c-2.093,2.155-5.016,3.499-8.257,3.499
+s-6.164-1.344-8.257-3.499c-0.489,0-2.583,1.29-3.148,1.881c-2.179,2.278-3.429,11.133-3.429,11.133h29.667
+C39.833,38.662,38.574,29.816,36.405,27.529z"></path>
+          </g>
+        </svg>
+      </a>
+    </div>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+    <a href="/" class="b-header__logo">
+      <img src="//x.cdn-expressen.se/images/73/33/7333f81185ca49c29935955c6a79e194/original.png" alt="Expressen.se">
+    </a>
+  </div>
+  <div class="b-nav">
+    <div class="b-nav__first-line" style="display: block;">
 
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+      <ul class="b-primary-menu">
+
+        <li class="b-primary-menu__item">
+          <a class="b-primary-menu__item-link" href="/" target="_top"><span>Start</span></a>
+        </li>
+
+        <li class="b-primary-menu__item">
+          <a class="b-primary-menu__item-link" href="/noje/" target="_top"><span>Nöje</span></a>
+        </li>
+
+        <li class="b-primary-menu__item">
+          <a class="b-primary-menu__item-link" href="/sport/" target="_top"><span>Sport</span></a>
+        </li>
+
+        <li class="b-primary-menu__item">
+          <a class="b-primary-menu__item-link" href="/tv/" target="_top"><span>TV</span></a>
+        </li>
+
+      </ul>
+
+
+    </div>
+  </div>
+</div>
+
+<!--<div class="b-mmenu" style="display: none;">
+      <ul class="b-mmenu__col">
+        <li class="b-mmenu__item b-mmenu__item_active">
+          <a href="/" class="b-smenu__link">Start</a>
+        </li>
+        <li class="b-mmenu__item">
+          <i class="b-mmenu__expand">
+            <i></i>
+          </i>
+          <a href="/noje/" class="b-smenu__link">Nöje</a>
+          <ul class="b-smenu">
+            <li class="b-smenu__item ">
+              <a href="/noje/extra/" class="b-smenu__link">Extra</a>
+            </li>
+          </ul>
+        </li>
+        <li class="b-mmenu__item">
+          <i class="b-mmenu__expand"><i></i></i>
+          <a href="/sport/" class="b-smenu__link">Sport</a>
+          <ul class="b-smenu">
+            <li class="b-smenu__item "><a href="/sport/fotboll/" class="b-smenu__link">Fotboll</a></li>
+            <li class="b-smenu__item "><a href="/sport/hockey/" class="b-smenu__link">Hockey</a></li>
+            <li class="b-smenu__item "><a href="http://www.expressen.se/malservice" class="b-smenu__link">Målservice</a>
+            </li>
+            <li class="b-smenu__item "><a href="/sport/trav/" class="b-smenu__link">Trav</a></li>
+            <li class="b-smenu__item "><a href="/sport/spel-och-tips/" class="b-smenu__link">Spel &amp; tips</a></li>
+          </ul>
+        </li>
+        <li class="b-mmenu__item"><i class="b-mmenu__expand"><i></i></i><a href="/tv/" class="b-smenu__link">TV</a>
+          <ul class="b-smenu">
+            <li class="b-smenu__item "><a href="/tv/nyheter/" class="b-smenu__link">Nyheter</a></li>
+            <li class="b-smenu__item "><a href="/tv/noje/" class="b-smenu__link">Nöje</a></li>
+            <li class="b-smenu__item "><a href="/tv/sport/" class="b-smenu__link">Sport</a></li>
+            <li class="b-smenu__item "><a href="/tv/program/" class="b-smenu__link">Program</a></li>
+            <li class="b-smenu__item "><a href="/tv/nyheter/primetime/" class="b-smenu__link">Primetime</a></li>
+            <li class="b-smenu__item "><a href="/tv/galna-klipp/" class="b-smenu__link">Galna klipp</a></li>
+          </ul>
+        </li>
+        <li class="b-mmenu__item"><i class="b-mmenu__expand"><i></i></i><a href="/gt/" class="b-smenu__link">GT</a>
+          <ul class="b-smenu">
+            <li class="b-smenu__item "><a href="/gt/noje/" class="b-smenu__link">Nöje</a></li>
+            <li class="b-smenu__item "><a href="/gt/kultur/" class="b-smenu__link">Kultur</a></li>
+            <li class="b-smenu__item "><a href="/gt/ledare/" class="b-smenu__link">Ledare</a></li>
+            <li class="b-smenu__item "><a href="/gt/sport/" class="b-smenu__link">Sport</a></li>
+          </ul>
+        </li>
+        <li class="b-mmenu__item"><i class="b-mmenu__expand"><i></i></i><a href="/kvallsposten/" class="b-smenu__link">Kvällsposten</a>
+          <ul class="b-smenu">
+            <li class="b-smenu__item "><a href="/kvp/noje/" class="b-smenu__link">Nöje</a></li>
+            <li class="b-smenu__item "><a href="/kvp/kultur/" class="b-smenu__link">Kultur</a></li>
+            <li class="b-smenu__item "><a href="/kvp/ledare/" class="b-smenu__link">Ledare</a></li>
+            <li class="b-smenu__item "><a href="/kvp/sport/" class="b-smenu__link">Sport</a></li>
+          </ul>
+        </li>
+        <li class="b-mmenu__item"><a href="/allt-om-resor/" class="b-smenu__link">Allt om resor</a></li>
+        <li class="b-mmenu__item"><a href="/blogg/" class="b-smenu__link">Bloggar</a></li>
+        <li class="b-mmenu__item"><a href="/debatt/" class="b-smenu__link">Debatt</a></li>
+        <li class="b-mmenu__item"><i class="b-mmenu__expand"><i></i></i><a href="/halsoliv/" class="b-smenu__link">Hälsoliv</a>
+          <ul class="b-smenu">
+            <li class="b-smenu__item "><a href="/halsoliv/halsa/" class="b-smenu__link">Hälsa</a></li>
+            <li class="b-smenu__item "><a href="/halsoliv/vikt/" class="b-smenu__link">Vikt</a></li>
+            <li class="b-smenu__item "><a href="/halsoliv/psykologi/" class="b-smenu__link">Psykologi</a></li>
+            <li class="b-smenu__item "><a href="/halsoliv/traning/" class="b-smenu__link">Träning</a></li>
+            <li class="b-smenu__item "><a href="/halsoliv/somn/" class="b-smenu__link">Sömn</a></li>
+            <li class="b-smenu__item "><a href="/halsoliv/sex--relationer/" class="b-smenu__link">Sex &amp;
+              relationer</a></li>
+          </ul>
+        </li>
+        <li class="b-mmenu__item"><a href="/kultur/" class="b-smenu__link">Kultur</a></li>
+      </ul>
+      <ul class="b-mmenu__col">
+        <li class="b-mmenu__item"><a href="/kronikorer/" class="b-smenu__link">Krönikörer</a></li>
+        <li class="b-mmenu__item"><a href="/ledare/" class="b-smenu__link">Ledare</a></li>
+        <li class="b-mmenu__item"><a href="/leva-och-bo/" class="b-smenu__link">Leva &amp; bo</a></li>
+        <li class="b-mmenu__item"><i class="b-mmenu__expand"><i></i></i><span class="not-link">Livsstil</span>
+          <ul class="b-smenu">
+            <li class="b-smenu__item "><a href="/motor/" class="b-smenu__link">Allt om bilar</a></li>
+            <li class="b-smenu__item "><a href="/mode/" class="b-smenu__link">Allt om mode</a></li>
+            <li class="b-smenu__item "><a href="/digital-livsstil/" class="b-smenu__link">Digital Livsstil</a></li>
+            <li class="b-smenu__item "><a href="http://rodamattan.expressen.se/" class="b-smenu__link">Röda mattan</a>
+            </li>
+          </ul>
+        </li>
+        <li class="b-mmenu__item"><a href="http://mittkok.expressen.se/" class="b-smenu__link">Mitt kök</a></li>
+        <li class="b-mmenu__item"><a href="/podcast/" class="b-smenu__link">Podcast</a></li>
+        <li class="b-mmenu__item"><a href="/webbtest/" class="b-smenu__link">Quiz</a></li>
+        <li class="b-mmenu__item"><a href="/nyheter/basta-nyhetsbilden-belonas-med-71717-kr/" class="b-smenu__link">Tipsa
+          71717</a></li>
+        <li class="b-mmenu__item"><i class="b-mmenu__expand"><i></i></i><span class="not-link">Tjänster</span>
+          <ul class="b-smenu">
+            <li class="b-smenu__item "><a href="http://expressen.se/malservice" class="b-smenu__link">Målservice</a>
+            </li>
+            <li class="b-smenu__item "><a href="http://expressen.se/tvtabla/" class="b-smenu__link">TV-tablå</a></li>
+          </ul>
+        </li>
+        <li class="b-mmenu__item"><a href="http://www.expressen.se/vader/" class="b-smenu__link">Väder</a></li>
+        <li class="b-mmenu__item"><a href="/a-till-o" class="b-mmenu__link"><span>A till Ö</span></a></li>
+      </ul>
+      <div class="clear"></div>
+
+      <div class="b-quicksearch cf" data-search-page-url="/sok/?q={0}"><a href="javascript:void(0)"
+                                                                          class="b-quicksearch__link">Sök</a>
+
+        <div class="b-quicksearch__input"><input type="search" placeholder="Sök på Expressen.se" mozactionhint="search">
+        </div>
+      </div>
+    </div>
+    -->
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
 </body>
 </html>
