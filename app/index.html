@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>left menu</title>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -19,6 +19,7 @@
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="../bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
+
 </head>
 <body>
 <!--[if lt IE 10]>
@@ -27,9 +28,9 @@
 <![endif]-->
 
 
-<div class="b-wrapper">
+<div  id="sb-site" class="b-wrapper">
   <div class="b-header cf">
-    <div class="b-header__menu b-header__btn">
+    <div class="b-header__menu b-header__btn sb-toggle-left">
       <svg viewBox="0 0 56 56">
         <rect x="12" y="14.378" class="svg-part" width="32" height="6.333"></rect>
         <rect x="12" y="35.289" class="svg-part" width="32" height="6.333"></rect>
@@ -2506,12 +2507,25 @@ b-rotating__item_odd" style="width: 297px;">
 
 
         </div>
-        <span id="widgetsloaded"></span></div>
-    </div>
-
-  </div>
+        <span id="widgetsloaded"></span>
 </div>
-
+<div class="sb-slidebar sb-left sb-active">
+  <nav>
+    <ul class="sb-menu">
+      <li><img src="http://plugins.adchsm.me/slidebars/images/slidebars-logo-white@2x.png" alt="Slidebars" width="118" height="40"></li>
+      <li class="sb-close"><a href="#">Home</a></li>
+      <li class="sb-close"><a href="#">Download</a></li>
+      <li class="sb-close"><a href="#">Usage</a></li>
+      <li class="sb-close"><a href="#">API</a></li>
+      <li class="sb-close"><a href="#">Compatibility</a></li>
+      <li class="sb-close"><a href="#">Issues</a></li>
+      <li class="sb-close"><a href="#">Contact</a></li>
+      <li class="sb-close"><a href="#">Github</a></li>
+      <li class="sb-close"><span class="sb-open-right">About the Author</span></li>
+      <li class="sb-close"><small>Slidebars © 2014 Adam Smith</small></li>
+    </ul>
+  </nav>
+</div>
 <!--<div class="b-mmenu" style="display: none;">
       <ul class="b-mmenu__col">
         <li class="b-mmenu__item b-mmenu__item_active">
@@ -2623,9 +2637,11 @@ b-rotating__item_odd" style="width: 297px;">
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/sidebars/distribution/0.10.2/slidebars.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
-
+<!-- inject:js -->
+<!-- endinject -->
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
 <!-- endbuild -->

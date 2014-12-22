@@ -1,2 +1,10 @@
 /* jshint devel:true */
-console.log('\'Allo \'Allo!');
+
+(function($) {
+  'use strict';
+  $(document).ready(function() {
+    $.slidebars({
+      scrollLock: true
+    });
+  });
+}) (jQuery);

@@ -2,7 +2,17 @@
 'use strict';
 // generated on 2014-12-19 using generator-gulp-webapp 0.2.0
 var gulp = require('gulp');
+var inject = require('gulp-inject');
 var $ = require('gulp-load-plugins')();
+
+gulp.task('inject', function () {
+  var target = gulp.src('./src/index.html');
+  // It's not necessary to read the files (will speed up things), we're only after their paths:
+  var sources = gulp.src(['bower_components/sidebars/distribution/0.10.2/slidebars.js'], {read: false});
+
+  return target.pipe(inject(sources))
+    .pipe(gulp.dest('./src'));
+});
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
@@ -22,7 +32,11 @@ gulp.task('jshint', function () {
     .pipe($.jshint.reporter('fail'));
 });
 
-gulp.task('html', ['styles'], function () {
+gulp.task('scripts', function(){
+  return gulp.src('')
+});
+
+gulp.task('html', ['styles','inject'], function () {
   var assets = $.useref.assets({searchPath: '{.tmp,app}'});
 
   return gulp.src('app/*.html')
@@ -90,7 +104,7 @@ gulp.task('serve', ['connect', 'watch'], function () {
 gulp.task('wiredep', function () {
   var wiredep = require('wiredep').stream;
 
-  gulp.src('app/styles/*.scss')
+  gulp.src('app/styles/*.{scss,css}')
     .pipe(wiredep())
     .pipe(gulp.dest('app/styles'));
 
