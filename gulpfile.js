@@ -32,11 +32,11 @@ gulp.task('jshint', function () {
     .pipe($.jshint.reporter('fail'));
 });
 
-gulp.task('scripts', function(){
+gulp.task('scripts', function () {
   return gulp.src('')
 });
 
-gulp.task('html', ['styles','inject'], function () {
+gulp.task('html', ['styles', 'inject'], function () {
   var assets = $.useref.assets({searchPath: '{.tmp,app}'});
 
   return gulp.src('app/*.html')
@@ -128,7 +128,7 @@ gulp.task('watch', ['connect'], function () {
   gulp.watch('bower.json', ['wiredep']);
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras', 'svg'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
@@ -136,7 +136,7 @@ gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });
 
-gulp.task('copyfiles', function() {
-  gulp.src('./app/**/*.{js,scss}')
-    .pipe(gulp.dest('./destination_directory'));
+gulp.task('svg', function () {
+  gulp.src('./app/styles/svg/**')
+    .pipe(gulp.dest('./dist/styles/svg'));
 });

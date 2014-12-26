@@ -1,10 +1,10 @@
 // bower:css
-
 // endbower
 // bower:scss
 @import '../../bower_components/_reset.scss/reset';
 @import '../../bower_components/sidebars/distribution/0.10.2/slidebars';
 // endbower
+@import "b-nav";
 
 body {
   background: #fafafa;
@@ -14,17 +14,19 @@ body {
 
 a, a:link, a:visited {
   text-decoration: none;
-  -webkit-tap-highlight-color: rgba(145,145,145,.5);
+  -webkit-tap-highlight-color: rgba(145, 145, 145, .5);
 }
 
 ol, ul {
   list-style: none;
 }
+
 h2 {
   font-size: 1.625em;
-  font-family: Helvetica,Sans-Serif;
+  font-family: Helvetica, Sans-Serif;
   line-height: 1.23em;
 }
+
 .l-one-column {
   background: #e8e7e6;
   margin: 0 0 0 7px;
@@ -43,21 +45,25 @@ h2 {
   z-index: 5;
   background: #fff;
 }
+
 .b-header__btn.b-header__menu {
   float: left;
   border-right-style: solid;
 }
+
 .b-header__btn.b-header__user {
   float: right;
   border-left-style: solid;
 }
+
 .b-header__btn {
   width: 45px;
   height: 45px;
   cursor: pointer;
-  border: 1px none rgba(188,188,188,.2);
+  border: 1px none rgba(188, 188, 188, .2);
 }
-.b-header__logo>img {
+
+.b-header__logo > img {
   display: block;
   max-width: 100%;
   max-height: 45px;
@@ -87,10 +93,10 @@ h2 {
   font-size: 18px;
   line-height: 24px;
   color: #fff;
-  font-family: Helvetica,Arial,Sans-serif;
+  font-family: Helvetica, Arial, Sans-serif;
   letter-spacing: 0;
   word-spacing: 0;
-  border-right: 1px solid rgba(188,188,188,.2);
+  border-right: 1px solid rgba(188, 188, 188, .2);
 }
 
 .b-primary-menu__item-link {
@@ -101,12 +107,13 @@ h2 {
 .b-separator {
   padding-bottom: 7px;
 }
+
 .b-title {
   font-size: 13px;
   line-height: 14px;
   padding: 2px 5px 2px;
   text-transform: uppercase;
-  font-family: "Siri Expressen Black",Helvetica,Arial,sans-serif;
+  font-family: "Siri Expressen Black", Helvetica, Arial, sans-serif;
   letter-spacing: 0;
   word-spacing: 0;
   font-weight: 900;
@@ -121,20 +128,22 @@ h2 {
   width: 100%;
   display: block;
 }
+
 .b-standard-vignette.extra {
   background-position: 0 100%;
 }
-.b-teaser-base{
+
+.b-teaser-base {
   margin: 0;
   padding: 7px;
   background: #fff;
 }
+
 .b-teaser {
   @extend .b-teaser-base;
   font-size: 14px;
   line-height: 16px;
 }
-.b-teaser-base_bordered, .b-autoteaser, .b-autoteaser-wrap, .b-linked-image, .b-teaser{}
 
 .b-title_image {
   overflow: hidden;
@@ -151,6 +160,7 @@ h2 {
   padding: 0 0 7px 0;
   border-top: 0 none;
 }
+
 .b-teaser__link {
   color: #222;
 }
@@ -166,14 +176,16 @@ h2 {
   width: 100%;
   position: absolute;
 }
+
 .b-headline {
-  font-family: "Siri Expressen Black",Helvetica,Arial,Sans-serif;
+  font-family: "Siri Expressen Black", Helvetica, Arial, Sans-serif;
   letter-spacing: 0;
   word-spacing: 0;
 }
+
 .b-headline, .b-headline a {
   text-decoration: none;
-  font-family: "Siri Expressen Black",Helvetica,Arial,Sans-serif;
+  font-family: "Siri Expressen Black", Helvetica, Arial, Sans-serif;
   font-weight: bold;
   line-height: 1em;
   letter-spacing: 0;
@@ -185,19 +197,22 @@ h2 {
   font-size: 20px;
   line-height: 1.1em;
 }
+
 .b-bb_red, .fg-red {
   font-weight: bold;
   color: #ec2925;
 }
+
 .b-teaser__text {
-  font: 16px/18px Arial,Helvetica,sans-serif;
+  font: 16px/18px Arial, Helvetica, sans-serif;
   display: block;
   margin: 4px 0 0 0;
 }
+
 .b-icon {
   position: relative;
   top: -2px;
-  font: bold 10px/18px Helvetica,Arial,sans-serif;
+  font: bold 10px/18px Helvetica, Arial, sans-serif;
   display: inline-block;
   height: 16px;
   color: #fff;
@@ -212,39 +227,51 @@ h2 {
   text-transform: uppercase;
   background: #ec2925;
 }
+
 .b-icon_tv:before {
   content: 'tv';
 }
+
 .b-icon_tv-text:before {
   content: 'Tv+Text';
 }
+
 html.no-plus .b-icon_splus, .b-icon_article {
   width: 7px;
   margin: 0 1px 0 0;
   vertical-align: bottom;
   background: url(http://www.expressen.se/Static/Mobile/images/sprite/sprite2.png?ver=2.8.22.2702) -214px 5px no-repeat;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), not all, not all, not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
-{
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), not all, not all, not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   html.no-plus .b-icon_splus, .b-icon_article {
-      background: url(http://www.expressen.se/Static/Mobile/images/sprite/sprite2@2x.png?ver=2.8.22.2702) -260px 7px no-repeat;
-      -moz-background-size: 265px 300px;
-      -o-background-size: 265px 300px;
-      -webkit-background-size: 265px 300px;
-      background-size: 265px 300px;
-    }
+    background: url(http://www.expressen.se/Static/Mobile/images/sprite/sprite2@2x.png?ver=2.8.22.2702) -260px 7px no-repeat;
+    -moz-background-size: 265px 300px;
+    -o-background-size: 265px 300px;
+    -webkit-background-size: 265px 300px;
+    background-size: 265px 300px;
+  }
 }
-.sb-active.sb-scroll-lock .b-wrapper{
-  height:100vh;
+
+.sb-active.sb-scroll-lock .b-wrapper {
+  height: 100vh;
   box-sizing: border-box;
   margin: 0;
 }
-.sb-slidebar .sb-close{
-  height:50px;
+
+.sb-slidebar {
+  background: #fff;
+
+  .sb-close {
+    height: 50px;
+  }
 }
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
 }
+
+
