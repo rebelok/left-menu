@@ -252,11 +252,14 @@ html.no-plus .b-icon_splus, .b-icon_article {
     background-size: 265px 300px;
   }
 }
+html,body{height: 100%;}
 
 .sb-active.sb-scroll-lock .b-wrapper {
-  height: 100vh;
+  height: 100%;
   box-sizing: border-box;
   margin: 0;
+  z-index: 3;
+  box-shadow:-5px 0px 4px -2px #ccc;
 }
 
 .sb-slidebar {
