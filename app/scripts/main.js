@@ -7,7 +7,7 @@
       scrollLock: true
     });
 
-    $('.b-menu').on('click','.b-sub-menu', function () {
+    $('.b-menu').on('click','.b-sub-menu,.b-sub-menu__header', function () {
       var $this = $(this);
       //$this.toggleClass('expanded');
       $this.parent().toggleClass('expanded');
