@@ -100,6 +100,10 @@
     left: 0;
   }
 }
+.b-sub-menu__header{
+  @extend .b-menu__link;
+  cursor: pointer;
+}
 
 .b-sub-menu {
   max-height: 0px;
